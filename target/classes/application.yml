@@ -1,0 +1,13 @@
+server.port: 8000
+
+
+spring:
+    application:
+        name: send-email
+    jackson:
+        property-naming-strategy: SNAKE_CASE
+
+    data.mongodb.uri: mongodb://localhost:24024/send-email
+
+#logging.level.org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
+#spring.http.log-request-details: true

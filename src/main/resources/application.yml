@@ -1,0 +1,13 @@
+server.port: 8002
+
+
+spring:
+    application:
+        name: mpp-person
+    jackson:
+        property-naming-strategy: SNAKE_CASE
+
+    data.mongodb.uri: mongodb://mpp-person-mongodb/mpp-person
+
+#logging.level.org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
+#spring.http.log-request-details: true

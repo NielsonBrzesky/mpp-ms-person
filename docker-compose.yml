@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+
+  mpp-person-mongodb:
+    container_name: mpp-person-mongodb
+    image: mongo:3.6
+    environment:
+      TZ: America/Sao_Paulo
+#    volumes:
+#      - search_mongo:/data/db
+#    networks:
+#      - bubble
+    ports:
+      - "27017:27017"
+
+  mpp-person-api:
+    container_name: mpp-person-api
+    build:
+      context: .
+      dockerfile: dev.DockerFile
+    depends_on:
+      - mpp-person-mongodb
+    ports:
+      - "6666:6666"
+    environment:
+      - DB_URL=mpp-person-mongodb:27017
