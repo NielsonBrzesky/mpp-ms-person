@@ -21,6 +21,7 @@ services:
     depends_on:
       - mpp-person-mongodb
     ports:
-      - "6666:6666"
+      - "8011:8011"
     environment:
       - DB_URL=mpp-person-mongodb:27017
+

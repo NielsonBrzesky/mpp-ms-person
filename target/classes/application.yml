@@ -1,13 +1,14 @@
-server.port: 8000
+server.port: 8011
 
 
 spring:
     application:
-        name: send-email
+        name: mpp-person
     jackson:
         property-naming-strategy: SNAKE_CASE
 
-    data.mongodb.uri: mongodb://localhost:24024/send-email
+#    data.mongodb.uri: mongodb://mpp-person-mongodb/mpp-person
+    data.mongodb.uri: mongodb://localhost:27017/mpp-person
 
 #logging.level.org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
 #spring.http.log-request-details: true

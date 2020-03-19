@@ -22,6 +22,4 @@ COPY --from=packager /docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN chmod +x /docker-entrypoint.sh
 
-EXPOSE 8001
-
 ENTRYPOINT [ "bash", "/docker-entrypoint.sh" ]
