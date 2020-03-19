@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.validation.Valid;
 import java.util.List;
 
-@RequestMapping("/api/v1/costumers/")
+@RequestMapping("/api/v1/persons/")
 public interface PersonApi extends GenericApi<PersonDTO, PersonFiltersDTO> {
 	
 	@Override
